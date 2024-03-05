@@ -1,0 +1,36 @@
+.AssetBox{
+    margin: 5px;
+}
+
+.AssetBox img{
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+.AssetBox:hover img{  
+    transform: scale(1.025);
+}
+
+.AssetBox .LabelContainer{
+    position: absolute;
+    z-index: 99;
+}
+
+.AssetBox .Label{
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.AssetBox .Label.EarlyRelease{
+	background-color: var(--label-early);
+	color:white;
+}
+
+.AssetBox .Label.NewRelease{
+    background-color: var(--label-new);
+    color:white;
+}
